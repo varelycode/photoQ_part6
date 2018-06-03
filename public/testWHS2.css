@@ -1,0 +1,154 @@
+body {
+	min-height: 100vh;  /* need this line to 
+					tell body to fill viewport */
+	font-family: 'Montserrat', sans-serif;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 80px;
+}
+
+#search-left {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 15%;
+	height: 40px;
+}
+
+#heading {
+	font-size: x-large;
+	font-weight: bold;
+}
+
+#search {
+	width: 60%;
+	height: 40px;
+}
+
+#search-input {
+	border: 1px;
+	border-radius: 0px;
+	border-style: solid;
+	margin-right: 0px;
+	width: 60%;
+	height: 38px;
+	font-size: larger;
+	padding-left: 10px;
+}
+
+#search-btn {
+	border: 1px;
+	border-radius: 0px;
+	border-style: solid;
+	border-left: hidden;
+	margin-left: 0px;
+	padding: 5px 20px 5px 20px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+main {
+	background-color: #eeeeee;
+	flex: 1 0 auto;
+}
+
+#no-search {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1 0 auto;
+	height: 500px;
+}
+
+.no-search-hint {
+	color: #777777;
+	font-size: large;
+	margin: 10px;
+}
+
+#display {
+	padding: 10px;
+}
+
+#react {
+
+}
+
+div.selectedControls {
+		     display: block;
+}
+
+div.normalControls {
+		   display: none;
+}
+
+/* Photo tile - position and size will be given by PhotoGallery */
+div.tile {
+    backgroundColor: #eee;
+    cursor: pointer;
+    overflow: hidden; 
+    float: left;
+    position: relative;
+}
+
+/* Tag styling */
+p.tagText {
+   left: 4px; 
+   top: 4px; 
+   position: absolute; 
+   zIndex: 2;
+   background-color: blue;
+   padding: 5px;
+   border-radius: 5px;
+   color: white;
+   word-break: break-all;
+}
+
+
+img {
+    display: block;
+}
+
+/* so far nothing special when image selected */
+img.normal {
+}
+
+img.selected {
+}
+
+@media (max-width: 500px)  {
+	header{
+		justify-content: space-between;
+		padding:0;
+	}
+	::-webkit-input-placeholder { /* WebKit browsers */
+        color: transparent;
+    }
+	#search-input{
+		visibility: hidden;
+		margin-left: 30px;
+		padding-right: 60px;
+	}
+	#search-btn {
+		border: none;
+		border-style: none;
+	}
+	#photoDisplay{
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+		justify-content:center;
+	}
+}

@@ -1,0 +1,43 @@
+<!doctype HTML>
+<html>
+<head>
+<title>PhotoQ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="http://web.cs.ucdavis.edu/~amenta/s18/reset.css">
+<link rel="stylesheet" type="text/css" href="testWHS2.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"> 
+</head>
+
+<body>
+
+<header>
+	<div id="search-left"><h1 id="heading">PhotoQ</h1></div>
+
+		<input id="search-input" placeholder="photo number">
+		<img onclick="photoByNumber()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSesTDQ6cm4cIFjzN-c64fqOvzdz3UVV3VbhGUgUETTk4S-HsrF" id="search-btn">
+
+	<div id="search-right"></div>
+</header>
+
+
+<main>
+
+</div>
+	<div id="no-search">
+		<a class="no-search-hint">Nothing's been searched yet!</a>
+		<a class="no-search-hint">Use the search above</a>
+	</div>
+	<div id="react"></div>
+
+</main>
+
+<!-- The Javascript for this page -->
+<script src="https://unpkg.com/react@15/dist/react.js"></script> 
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="prop-types.js"></script>
+<script src="react-photo-gallery.js"></script>
+<script src="testWHS2.js"> </script>
+
+</body>
+</html>
